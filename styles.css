@@ -1,0 +1,89 @@
+body {
+    padding: 30px 10%;
+}
+
+form {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    max-width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+form section {
+    display: block;
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2em;
+}
+
+/* Personal info section */
+#Personal-info input {
+    width: 360px;
+    padding: 12px 10px;
+}
+
+/* Car info section */
+#car-info select {
+    width: 280px;
+    padding: 12px 10px;
+}
+
+#car-info input {
+    width: 200px;
+    padding: 12px 10px;
+}
+
+/* Order info section */
+#order-info input {
+    padding: 12px 10px;
+}
+
+#part-input {
+    width: 400px;
+}
+#qyt-input {
+    width: 70px;
+}
+#date-input {
+    width: 200px;
+}
+
+/* General form elements */
+input, select {
+    border: 0px;
+    margin: 0px 0px 10px;
+    background-color: aliceblue;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    border: 1px dashed black;
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+.question-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+button {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    border: 0px;
+    background-color: black;
+    padding: 15px 20px;
+    color: white;
+}

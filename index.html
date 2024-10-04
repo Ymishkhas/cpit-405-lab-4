@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab4</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <main>
+        <form id="request-parts" action="https://httpbin.org/post" method="post">
+            <h2>Great Auto Parts - Order Form</h2>
+            <section id="Personal-info">
+                <h3>Personal Information</h3>
+                <div class="question-box">
+                    <input name="fname" type="text" placeholder="First Name" required>
+                    <input name="lname" type="text" placeholder="Last Name" required>
+                </div>
+                <div class="question-box">
+                    <input name="email" type="email" placeholder="Email" required>
+                    <input name="phone" type="text" placeholder="Phone Number" required>
+                </div>
+            </section>
+            <section id="car-info">
+                <h3>Car Information</h3>
+                <div class="question-box">
+                    <select name="make" id="make-select" required>
+                        <option value="default" selected disabled>Choose a make</option>
+                        <option value="toyota">Toyota</option>
+                        <option value="ford">Ford</option>
+                        <option value="honda">Honda</option>
+                        <option value="bmw">BMW</option>
+                        <option value="audi">Audi</option>
+                        <option value="mercedes">Mercedes-Benz</option>
+                        <option value="nissan">Nissan</option>
+                        <option value="chevrolet">Chevrolet</option>
+                        <option value="volkswagen">Volkswagen</option>
+                        <option value="tesla">Tesla</option>
+                    </select>
+                    <select name="model" id="model-select" required>
+                        <option value="default" selected disabled>Choose a model</option>
+                        <option value="camery">Camery</option>
+                        <option value="spark">Spark</option>
+                        <option value="entra">Entra</option>
+                    </select>
+                    <input name="year" type="number" min="1980" max="2024" placeholder="Enter year">
+                </div>
+            </section>
+            <section id="order-info">
+                <h3>Order & pickup date</h3>
+                <div class="question-box">
+                    <input id="part-input" name="part" type="text" placeholder="Enter the spare part you need" required>
+                    <input id="qyt-input" name="qyt" type="number" min="1" max="10" placeholder="Enter qyt" required>
+                    <input id="date-input" name="date" type="date" placeholder="Enter pickup date" required>
+                </div>
+                <div class="question-box">
+                    <textarea name="comment" id="comment" placeholder="Enter your comment"></textarea>
+                </div>
+            </section>
+            <section>
+                <button type="submit" form="request-parts">Submit</button>
+            </section>
+        </form>
+    </main>
+</body>
+
+</html>
